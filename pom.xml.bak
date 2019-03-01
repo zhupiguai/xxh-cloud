@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+<!--
+	<parent>
+    <groupId>com.szqk-tech</groupId>
+    <artifactId>xd-base</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+		<relativePath>../qk/pom.xml</relativePath>
+	</parent>
+-->
+  <groupId>com.childhood</groupId>
+	<artifactId>xxh-cloud</artifactId>
+  <version>2.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<modules>
+		<module>xxh-cloud-eureka</module>
+    <module>xxh-cloud-config</module>
+	</modules>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>Snapshots Repository</name>
+      <url>http://10.10.11.140:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+</project>

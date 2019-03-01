@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: eureka
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://192.168.110.39:10040
+      fail-fast: true
+

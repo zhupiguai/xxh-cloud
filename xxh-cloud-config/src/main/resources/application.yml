@@ -1,0 +1,33 @@
+server:
+  port: 10040
+spring:
+  application:
+    name: xxh-cloud-config
+  profiles:
+    active: dev
+  # 使用rabbitmq自动刷新
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
+  cloud:
+    # 使用rabbitmq自动刷新
+#    bus:
+#      trace:
+#        enabled: true     # 开启cloud bus的跟踪
+    config:
+      server:
+        git:
+          clone-on-start: true
+          uri: https://github.com/zhupiguai/config-files.git
+          username: 79404398@qq.com
+          password: Z5258568z
+          search-paths: /*
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10010/eureka/
+
+
+

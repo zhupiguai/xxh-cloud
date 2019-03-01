@@ -1,0 +1,22 @@
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          uri: https://github.com/zhupiguai/config-files.git
+          username: 79404398@qq.com
+          password: Z5258568z
+          search-paths: /*
+          force-pull: true
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://10.12.11.24:10010/eureka/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10010/eureka/
+
+
